@@ -1,0 +1,14 @@
+Edit the file /webapps/manager/META-INF/context.xml:
+
+Previous:
+<Context antiResourceLocking="false" privileged="true">
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+</Context>
+
+Newer:
+<Context antiResourceLocking="false" privileged="true">
+  <!--
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+    -->
+</Context>
